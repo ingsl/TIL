@@ -128,6 +128,3 @@ Perm 영역은 보통 Class의 Meta 정보나 Method의 Meta 정보, Static 변�
 
 (다만, 기존 Perm 영역에 존재하던 Static Object는 Heap 영역으로 옮겨져 최대한 GC 대상이 될 수 있도록 함.)
 
-
-
-출처: https://eddies.tistory.com/27 [재미있고 소소한 삶을 사는 사람의 블로그.]
