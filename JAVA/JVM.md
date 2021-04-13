@@ -21,8 +21,8 @@ JRE + 개발에 필요한 툴
 2. 자바 컴파일러(javac)가 소스코드(java)를 읽어 바이트코드(class)로 변환 (컴파일된 결과물)
 3. Class Loader를 통해 class파일을 JVM에 로딩. 로딩된 파일들은 Excution engine을 통해 기계어로 번역, 명령을 실행
 4. OS에서 메모리를 할당 받은 Runtime Data Areas에 배치되어 실행
-
 <br />
+
 ![](https://github.com/ingsl/TIL/blob/1fcb1fe5da5ce09b004db3978ed6a96b31e5cb7c/JAVA/image/JVM_image1.png)
 <br />
  
@@ -38,10 +38,11 @@ JVM내로 .class파일을 로드하고  Runtime Data Areas에 배치.
 
 #### Runtime Data Area
 프로그램을 실행하기 위해 OS로부터 할당받은 메모리 공간
-<br />
 
 <br />
+
 ![](https://github.com/ingsl/TIL/blob/1fcb1fe5da5ce09b004db3978ed6a96b31e5cb7c/JAVA/image/JVM_image2.png)
+
 <br />
 
 1) PC Register  
