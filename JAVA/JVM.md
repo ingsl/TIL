@@ -67,7 +67,7 @@ JVM내로 .class파일을 로드하고  Runtime Data Areas에 배치.
  new 명령어로 생성된 인스턴스와 객체가 저장되는 영역(Garbage Collection 이슈는 이 영역에서 일어나며, 모든 Thread가 공유)
  <br />
 
-![](https://github.com/ingsl/TIL/blob/1fcb1fe5da5ce09b004db3978ed6a96b31e5cb7c/JAVA/image/JVM_image3.png)
+![](https://github.com/ingsl/TIL/blob/c88d3776a371fa0d613fcc7c4efe9e5b7b01af1f/JAVA/image/JVM_image3.png)
 <br />
 
 ### NEW / YOUNG
