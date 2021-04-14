@@ -65,3 +65,33 @@ JVM내로 .class파일을 로드하고  Runtime Data Areas에 배치.
 5) Heap Area  
  객체를 저장하는 가상 메모리리공간  
  new 명령어로 생성된 인스턴스와 객체가 저장되는 영역(Garbage Collection 이슈는 이 영역에서 일어나며, 모든 Thread가 공유)
+ <br />
+
+![](https://github.com/ingsl/TIL/blob/1fcb1fe5da5ce09b004db3978ed6a96b31e5cb7c/JAVA/image/JVM_image3.png)
+<br />
+
+### NEW / YOUNG
+ - Eden : 객체들이 최초로 생성되는 공간.
+ - Survivor 0 / 1 : Eden에서 참조되는 객체들이 저장되는 공간.
+
+### Old
+New Area에서 일정 시간 참조되고 있는, 살아남은 객체들이 저장되는 공간. Eden 영역에 객체가 가득 차게되면 첫 번째 GC(Minor GC)가 발생한다. Eden 영역에 있는 값들을 Survivor 1 영역에 복사하고 이 영역을 제외한 나머지 영역의 객체를 삭제한다.  
+인스턴스는 소멸 방법과 소멸 시점이 지역변수와는 다르기에 힙이라는 별도의 영역에 할당
+
+### Java7 Perm
+Heap메모리 영역  
+Perm은 JVM에 의해 크기가 강제되던 영역  
+ <br />
+### Java8 Metaspace 
+Native memory 영역  
+OS가 자동으로 크기를 조절하며 옵션으로 Metaspace의 크기를 줄일 수 있음.
+
+Perm 영역은 보통 Class의 Meta 정보나 Method의 Meta 정보, Static 변수와 상수 정보들이 저장되는 공간.
+이 영역은 Java 8부터는 Native 영역으로 이동하여 Metaspace 영역으로 변경
+(다만, 기존 Perm 영역에 존재하던 Static Object는 Heap 영역으로 옮겨져 최대한 GC 대상이 될 수 있도록 함.)
+
+출처
+- https://johngrib.github.io/wiki/java8-why-permgen-removed/ 
+- https://coding-start.tistory.com/205
+- https://asfirstalways.tistory.com/158
+
