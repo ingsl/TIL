@@ -12,7 +12,9 @@ JDK 1.5에 처음 도입
 |\<K>|Key|
 |\<V>|Value|
 |\<N>|Number| 
+
 <br/>
+
 ### 제네릭클래스 및 인터페이스
 ```java
 public class ClassName <T> {...}
